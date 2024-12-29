@@ -2,20 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/about/about/</loc>
+    <loc>https://drgwel.com/about/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://drgwel.com/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/projets/bemoreocean/</loc>
+    <loc>https://drgwel.com/projets/bemoreocean/</loc>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://drgwel.com/</loc>
   </url><url>
-    <loc>http://localhost:1313/projets/instantocean/</loc>
+    <loc>https://drgwel.com/projets/instantocean/</loc>
   </url><url>
-    <loc>http://localhost:1313/projets/</loc>
+    <loc>https://drgwel.com/projets/</loc>
   </url><url>
-    <loc>http://localhost:1313/series/</loc>
+    <loc>https://drgwel.com/series/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://drgwel.com/tags/</loc>
   </url>
 </urlset>
