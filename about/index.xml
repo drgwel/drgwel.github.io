@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About on Site personnel de DrGwel</title>
-    <link>https://drgwel.github.io/about/</link>
+    <link>https://www.drgwel.com/about/</link>
     <description>Recent content in About on Site personnel de DrGwel</description>
     <generator>Hugo</generator>
     <language>fr</language>
-    <atom:link href="https://drgwel.github.io/about/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.drgwel.com/about/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://drgwel.github.io/about/about/</link>
+      <link>https://www.drgwel.com/about/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://drgwel.github.io/about/about/</guid>
+      <guid>https://www.drgwel.com/about/about/</guid>
       <description>&lt;h1 id=&#34;qui-est-dr-gwel-&#34;&gt;Qui est Dr Gwel ?&lt;/h1&gt;&#xA;&lt;p&gt;J&amp;rsquo;ai commencé à streamer sur Twitch en octobre 2021. Au fil de mes émissions, j&amp;rsquo;ai cherché à rassembler une communauté autour de sujets qui me passionnent : les &lt;strong&gt;jeux&lt;/strong&gt; et la &lt;strong&gt;science&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;À chaque émission, je souhaite construire une ambiance tranquille et bienveillante, avec la recherche constante de qualité et d&amp;rsquo;ambition dans les moyens utilisés. Aussi bien avec le matériel (dont l&amp;rsquo;achat a été rendu possible grâce aux abonnée.es) que pour les logiciels, scripts et éléments interactifs. Je prends un énorme plaisir à retrouver ma communauté pour partager ma vie de chercheur et vivre des moments inoubliables ensemble.&lt;/p&gt;</description>
     </item>
   </channel>
