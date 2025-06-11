@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Front on DrGwel&#39;s Personal Site</title>
+    <link>https://www.drgwel.com/en/front/</link>
+    <description>Recent content in Front on DrGwel&#39;s Personal Site</description>
+    <generator>Hugo</generator>
+    <language>en-CA</language>
+    <atom:link href="https://www.drgwel.com/en/front/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://www.drgwel.com/en/front/front/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.drgwel.com/en/front/front/</guid>
+      <description>&lt;script src=&#34;https://kit.fontawesome.com/b949578478.js&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;&#xA;&lt;h1 id=&#34;welcome-on-board&#34;&gt;Welcome on board!&lt;/h1&gt;&#xA;&lt;br&gt;&#xA;&lt;div class=&#34;row&#34;&gt;&#xA;  &lt;div class=&#34;column&#34;&gt;&#xA;    &lt;image class=&#34;portrait-image&#34; src=&#34;https://www.drgwel.com/images/portrait.jpg&#34; width=&#34;250&#34; height=&#34;250&#34;&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;div class=&#34;column&#34;&gt;&#xA;    &lt;div&gt;&#xA;      &lt;p style=&#34;vertical-align: middle;&#34;&gt; I am &lt;b&gt;DrGwel&lt;/b&gt;, marine ecologist and science communicator. &lt;br&gt;&lt;br&gt;&#xA;      I produce online content focused on the oceans, using games like Sea of ​​Thieves and Subnautica to discuss current scientific news and present oceanographic concepts.&lt;/p&gt;&#xA;      &lt;div class=&#34;row2&#34;&gt;&#xA;        &lt;div class=&#34;column2&#34;&gt;&#xA;          &lt;a href=&#34;https://twitch.tv/drgwel&#34; class=&#34;fa-brands fa-twitch&#34;&gt; LIVES &amp; CLIPS&lt;/a&gt;&#xA;        &lt;/div&gt;&#xA;        &lt;div class=&#34;column2&#34;&gt;&#xA;          &lt;a href=&#34;https://www.youtube.com/@drgwel&#34; class=&#34;fa-brands fa-youtube&#34;&gt; REPLAYS&lt;/a&gt;&#xA;        &lt;/div&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;br&gt;&#xA;&lt;hr style=&#34;width:50%; margin: auto;&#34;&gt;&#xA;&lt;br&gt;&#xA;&lt;p style=&#34;text-align: center; font-weight: bold&#34;&gt;You can find me live, usually on Fridays once a month.&lt;br&gt;There is no fixed schedule, so follow the channel so you don&#39;t miss any upcoming shows!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
