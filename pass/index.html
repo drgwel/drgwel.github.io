@@ -69,12 +69,12 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/ChouettosPass.loader.js";
+      var loaderUrl = buildUrl + "/Build.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/ChouettosPass.data",
-        frameworkUrl: buildUrl + "/ChouettosPass.framework.js",
-        codeUrl: buildUrl + "/ChouettosPass.wasm",
+        dataUrl: buildUrl + "/Build.data",
+        frameworkUrl: buildUrl + "/Build.framework.js",
+        codeUrl: buildUrl + "/Build.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Arthouuuur",
         productName: "ChouettosPass",
@@ -92,7 +92,8 @@
       // If you would like all file writes inside Unity Application.persistentDataPath
       // directory to automatically persist so that the contents are remembered when
       // the user revisits the site the next time, uncomment the following line:
-      config.autoSyncPersistentDataPath = true;
+      // config.autoSyncPersistentDataPath = true;
+      // DISABLED: We use manual sync to have better control over IndexedDB operations
       // This autosyncing is currently not the default behavior to avoid regressing
       // existing user projects that might rely on the earlier manual
       // JS_FileSystem_Sync() behavior, but in future Unity version, this will be
