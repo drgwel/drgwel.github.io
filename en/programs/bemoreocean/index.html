@@ -105,7 +105,7 @@
     
     
 
-<link type="text/css" rel="stylesheet" href="/css/bundle.min.175237bfe571d2d0a4818b5a59978297c290a033ad10963c0c2e6a4d46e5deab.css">
+<link type="text/css" rel="stylesheet" href="/css/bundle.min.c8ffcc197a3e5536b198311c164d8f75333d985e56b8a0314eff5670ae791db9.css">
 
 
     
@@ -253,6 +253,9 @@
     </ul>
 </nav>
 
+        <div class="language-selector">
+    <div class="heading"><a href="https://www.drgwel.com/en/programs/bemoreocean/" class="active">EN</a></div>
+</div>
         
 
 
@@ -341,8 +344,21 @@ Propulsed by <a target="_blank" href="https://gohugo.io">Hugo</a> | Theme by <a 
     <a href="/documents/BeMoreOcean_EN.pdf"> <img src="/images/cover_BeMoreOcean.png" style="width:100%; max-width:300px; height:auto;"></a>
   </div>
 </div>
-<br>
-<p>The expedition Journal is available <a href="/documents/BeMoreOcean_EN.pdf">here</a>.</p>
+<link rel="stylesheet" href="/css/flipbook.css">
+<div id="flipbook-root" data-pdf="/documents/BeMoreOcean_FR.pdf" class="flipbook-root">
+  <div class="flipbook-book">
+    <canvas id="left-canvas" class="flip-canvas left"> </canvas>
+    <canvas id="right-canvas" class="flip-canvas right"></canvas>
+  </div>
+  <noscript> <p>JavaScript is required to view this flipbook. You can download the Journal <a href="/documents/BeMoreOcean_EN.pdf">here</a>.</p> </noscript>
+  <br>
+  <div class="flipbook-controls">
+    <button id="prev-btn" aria-label="Previous page">‹ </button>
+    <span id="page-indicator">1 / 1</span>
+    <button id="next-btn" aria-label="Next page"> ›</button>
+  </div>
+</div>
+<script type="module" src="/js/flipbook.mjs"></script>
 <hr style="width:50%; margin: auto;">
 <br>
 <p><em>Watch again the shows (in French):</em></p>
