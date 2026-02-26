@@ -1,5 +1,4 @@
 import * as pdfjsLib from '/js/pdf.mjs';
-
 pdfjsLib.GlobalWorkerOptions.workerSrc = '/js/pdf.worker.mjs';
 
 const root = document.getElementById('flipbook-root');
@@ -15,6 +14,11 @@ let pdfDoc = null;
 let totalPages = 0;
 let currentSpread = 0;
 
+// freeze state used while user is pinch-zooming
+let freezeLayout = false;
+let frozenPageContainerWidth = null;
+let zoomDebounceTimer = null;
+
 function resizeCanvasForDPR(canvas, width, height) {
   const dpr = window.devicePixelRatio || 1;
   canvas.width = Math.floor(width * dpr);
@@ -25,7 +29,18 @@ function resizeCanvasForDPR(canvas, width, height) {
   ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 }
 
-function renderPageToCanvas(pageNumber, canvas) {
+function computeContainerWidth() {
+  // overall book width limited to 2500px, with 40px page padding
+  const containerOuterWidth = Math.min(2500, window.innerWidth - 40);
+  const pageContainerWidth = containerOuterWidth * 0.48;
+  // if we're frozen (user zooming), return the frozen width instead
+  if (freezeLayout && frozenPageContainerWidth) {
+    return { pageContainerWidth: frozenPageContainerWidth };
+  }
+  return { pageContainerWidth };
+}
+
+function renderPageToCanvas(pageNumber, canvas, scaleOverride) {
   if (!canvas) return Promise.resolve();
   if (pageNumber < 1 || pageNumber > totalPages) {
     const ctx = canvas.getContext('2d');
@@ -33,9 +48,10 @@ function renderPageToCanvas(pageNumber, canvas) {
     return Promise.resolve();
   }
   return pdfDoc.getPage(pageNumber).then(page => {
-    const viewport = page.getViewport({ scale: 1 });
-    const containerWidth = Math.min(900, window.innerWidth - 40) * 0.48;
-    const scale = (containerWidth) / viewport.width;
+    const baseViewport = page.getViewport({ scale: 1 });
+    const { pageContainerWidth } = computeContainerWidth();
+    const scaleByWidth = pageContainerWidth / baseViewport.width;
+    const scale = scaleOverride || scaleByWidth;
     const vp = page.getViewport({ scale });
     resizeCanvasForDPR(canvas, vp.width, vp.height);
     const renderContext = { canvasContext: canvas.getContext('2d'), viewport: vp };
@@ -69,12 +85,39 @@ function goPrev() {
 
 prevBtn.addEventListener('click', goPrev);
 nextBtn.addEventListener('click', goNext);
-window.addEventListener('resize', () => { updateSpread(); });
+window.addEventListener('resize', () => {
+  // don't force re-render while pinch-zooming; visualViewport handles it
+  if (!freezeLayout) updateSpread();
+});
+
+// VisualViewport: detect pinch-zoom and freeze canvas resizing while zooming
+if (window.visualViewport) {
+  window.visualViewport.addEventListener('resize', () => {
+    // When visualViewport.width/scale changes rapidly, treat as a zoom gesture
+    if (!freezeLayout) {
+      // freeze using current computed width (so canvases remain readable)
+      frozenPageContainerWidth = computeContainerWidth().pageContainerWidth;
+      freezeLayout = true;
+    }
+    // debounce end of zoom: when no further resize events arrive, unfreeze and re-render
+    clearTimeout(zoomDebounceTimer);
+    zoomDebounceTimer = setTimeout(() => {
+      freezeLayout = false;
+      frozenPageContainerWidth = null;
+      updateSpread();
+    }, 250);
+  });
+  // also handle scroll/pinch gestures that may change offset without scale
+  window.visualViewport.addEventListener('scroll', () => {
+    // we don't change freeze state on scroll; this keeps behaviour simple
+  });
+}
 
 pdfjsLib.getDocument(pdfUrl).promise.then(doc => {
   pdfDoc = doc;
   totalPages = pdfDoc.numPages;
   currentSpread = 0;
+  // initial render
   updateSpread();
 }).catch(err => {
   console.error('Failed to load PDF:', err);
