@@ -2,11 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.drgwel.com/fr/programmes/bemoreocean/</loc>
+    <loc>https://www.drgwel.com/fr/creations/bemoreocean/</loc>
     <lastmod>2024-10-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-CA"
+                href="https://www.drgwel.com/en/creations/bemoreocean/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr-FR"
+                href="https://www.drgwel.com/fr/creations/bemoreocean/"
+                />
   </url><url>
-    <loc>https://www.drgwel.com/fr/programmes/</loc>
+    <loc>https://www.drgwel.com/fr/creations/</loc>
     <lastmod>2024-10-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-CA"
+                href="https://www.drgwel.com/en/creations/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr-FR"
+                href="https://www.drgwel.com/fr/creations/"
+                />
   </url><url>
     <loc>https://www.drgwel.com/fr/</loc>
     <lastmod>2024-10-28T00:00:00+00:00</lastmod>
@@ -21,29 +41,109 @@
                 href="https://www.drgwel.com/fr/"
                 />
   </url><url>
-    <loc>https://www.drgwel.com/fr/programmes/chouettoscup/</loc>
+    <loc>https://www.drgwel.com/fr/creations/chouettoscup/</loc>
     <lastmod>2024-10-19T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-CA"
+                href="https://www.drgwel.com/en/creations/chouettoscup/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr-FR"
+                href="https://www.drgwel.com/fr/creations/chouettoscup/"
+                />
   </url><url>
-    <loc>https://www.drgwel.com/fr/programmes/2024-oceansdesavoir/</loc>
+    <loc>https://www.drgwel.com/fr/creations/2024-oceansdesavoir/</loc>
     <lastmod>2024-10-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-CA"
+                href="https://www.drgwel.com/en/creations/2024-oceansdesavoir/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr-FR"
+                href="https://www.drgwel.com/fr/creations/2024-oceansdesavoir/"
+                />
   </url><url>
-    <loc>https://www.drgwel.com/fr/programmes/2024-interviewclemence/</loc>
+    <loc>https://www.drgwel.com/fr/creations/2024-interviewclemence/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-CA"
+                href="https://www.drgwel.com/en/creations/2024-interviewclemence/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr-FR"
+                href="https://www.drgwel.com/fr/creations/2024-interviewclemence/"
+                />
   </url><url>
-    <loc>https://www.drgwel.com/fr/programmes/2024-jdrsubnautica/</loc>
+    <loc>https://www.drgwel.com/fr/creations/2024-jdrsubnautica/</loc>
     <lastmod>2024-06-08T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-CA"
+                href="https://www.drgwel.com/en/creations/2024-jdrsubnautica/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr-FR"
+                href="https://www.drgwel.com/fr/creations/2024-jdrsubnautica/"
+                />
   </url><url>
-    <loc>https://www.drgwel.com/fr/programmes/2024-24hvulga/</loc>
+    <loc>https://www.drgwel.com/fr/creations/2024-24hvulga/</loc>
     <lastmod>2023-12-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-CA"
+                href="https://www.drgwel.com/en/creations/2024-24hvulga/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr-FR"
+                href="https://www.drgwel.com/fr/creations/2024-24hvulga/"
+                />
   </url><url>
-    <loc>https://www.drgwel.com/fr/programmes/instantocean/</loc>
+    <loc>https://www.drgwel.com/fr/creations/instantocean/</loc>
     <lastmod>2023-09-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-CA"
+                href="https://www.drgwel.com/en/creations/instantocean/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr-FR"
+                href="https://www.drgwel.com/fr/creations/instantocean/"
+                />
   </url><url>
-    <loc>https://www.drgwel.com/fr/programmes/chouettospass/</loc>
+    <loc>https://www.drgwel.com/fr/creations/chouettospass/</loc>
     <lastmod>2023-09-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-CA"
+                href="https://www.drgwel.com/en/creations/chouettospass/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr-FR"
+                href="https://www.drgwel.com/fr/creations/chouettospass/"
+                />
   </url><url>
-    <loc>https://www.drgwel.com/fr/programmes/2022-24hscience/</loc>
+    <loc>https://www.drgwel.com/fr/creations/2022-24hscience/</loc>
     <lastmod>2022-05-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-CA"
+                href="https://www.drgwel.com/en/creations/2022-24hscience/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr-FR"
+                href="https://www.drgwel.com/fr/creations/2022-24hscience/"
+                />
   </url><url>
     <loc>https://www.drgwel.com/fr/about/about/</loc>
     <xhtml:link
