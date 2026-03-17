@@ -12,6 +12,7 @@
       <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <!-- <div id="unity-logo"></div> -->
+        <img id="unity-wait-gif" src="TemplateData/Wait.gif" alt="Loading...">
         <div id="unity-progress-bar-empty">
           <div id="unity-progress-bar-full"></div>
         </div>
@@ -78,8 +79,10 @@
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Arthouuuur",
         productName: "ChouettosPass",
-        productVersion: "1.0.0",
+        productVersion: "1.3",
         showBanner: unityShowBanner,
+        // Enable transparent canvas
+        alpha: true
       };
 
       // By default, Unity keeps WebGL canvas render target size matched with
@@ -129,7 +132,7 @@
         window.addEventListener('resize', setFullScreenCanvas);
       }
 
-      document.querySelector("#unity-loading-bar").style.display = "block";
+      document.querySelector("#unity-loading-bar").style.display = "flex";
 
       var script = document.createElement("script");
       script.src = loaderUrl;
